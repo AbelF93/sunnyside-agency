@@ -2,11 +2,79 @@
 *{
     margin: 0;
     padding: 0 0 0 0;
+    
+}
+%classic_font_parameter{
+    font-family:'Barlow';
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Fraunces','Barlow';
+    font-style: normal;
+    font-weight: 400 900;
+    src: url("https://fonts.google.com/specimen/Fraunces","https://fonts.google.com/specimen/Barlow");
+}
+%title_font_parameter{
+    font-family:'Fraunces';
+    font-size: 2em;
+    font-style: ;
+    font-weight:bolder;
+
+    
+}
+#header__p--introduction{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 3em;
+    font-weight: 900;
+    color: white;
+}
+%title-backgroud_font_parameter{
+    font-family:'Fraunces';
+    font-weight:700;
+    color: hsl(198, 62%, 26%);
+}
+%content_positionning{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 body{
-    width: 360px;
-
-}
-img{
     max-width: 360px;
+    font-size: 18px;
+    padding: 0 auto;
 }
+
+.article__img{
+    border-radius: 100%;
+    transform: scale(0.5);
+}
+header{
+  padding-top: 20px;
+  background-color:rgb(62, 191, 255);
+  .header__top{
+    flex-direction: row;
+  }
+}
+.section__content,.header_content, p{
+@extend %content_positionning;
+}
+img.header__img--arrow-down{
+    position: absolute;
+}
+.title{
+    @extend %title_font_parameter;
+}
+.resume{
+    @extend %classic_font_parameter;
+}
+.
+.content{
+    @extend %classic_font_parameter
+}
+
+
+footer{
+    background-color: hsl(168, 34%, 41%);
+}
+

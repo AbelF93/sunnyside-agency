@@ -1,80 +1,174 @@
-//default set margin
-*{
-    margin: 0;
+* {
+    margin: 0 0 0 0;
     padding: 0 0 0 0;
-    
-}
-%classic_font_parameter{
-    font-family:'Barlow';
-    font-weight: 600;
-}
-@font-face {
-    font-family: 'Fraunces','Barlow';
-    font-style: normal;
-    font-weight: 400 900;
-    src: url("https://fonts.google.com/specimen/Fraunces","https://fonts.google.com/specimen/Barlow");
-}
-%title_font_parameter{
-    font-family:'Fraunces';
-    font-size: 2em;
-    font-style: ;
-    font-weight:bolder;
 
-    
 }
-#header__p--introduction{
-    font-family:'Courier New', Courier, monospace;
-    font-size: 3em;
-    font-weight: 900;
-    color: white;
+
+//font-link
+@font-face {
+    font-family: 'Fraunces', 'Barlow';
+    font-style: normal;
+    font-weight: 400 999;
+    src: url("https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces");
 }
-%title-backgroud_font_parameter{
-    font-family:'Fraunces';
-    font-weight:700;
+
+/*--------------------------------------------------*/
+//font_parameters-start
+
+%classic_font_parameter {
+    font-family: 'Barlow';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 170%;
+
+    padding: 8%;
+    max-width: 80%;
+
+    color: hsl(210, 4%, 67%);
+
+}
+
+%title_font_parameter {
+    font-family: 'Fraunces';
+    font-size: 2.5em;
+    font-weight: 999;
+
+    padding-top: 18%;
+
+    max-width: 80%;
+}
+
+%more_font_parameter {
+    font-family: 'Fraunces';
+    font-size: 1;
+    font-weight: 999;
+    color: black;
+    text-decoration: none;
+    margin-top: 2%;
+    margin-bottom: 15%;
+
+}
+
+%title-backgroud_font_parameter {
+    font-family: 'Fraunces';
+    font-weight: 700;
     color: hsl(198, 62%, 26%);
 }
-%content_positionning{
+/*--------------------------------------------------*/
+//font-application
+.header__title{
+    @extend %title_font_parameter;
+    color: white;
+    padding-bottom: 16%;
+}
+.title {
+    @extend %title_font_parameter;
+}
+
+.resume {
+    @extend %classic_font_parameter;
+}
+
+.more {
+    @extend %more_font_parameter;
+    color: black;
+    position: relative;
+    display: block;
+    z-index: 5;
+}
+
+.more__border {
+    background-color: hsl(51, 100%, 80%);
+    border-radius: 5px;
+    padding: 0 6.5vh;
+    height: 9px;
+    transform: translateY(-10px);
+    display: block;
+    z-index: 1;
+
+}
+
+%content_positionning {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
 }
-body{
-    max-width: 360px;
-    font-size: 18px;
-    padding: 0 auto;
+
+@media (max-width=375px) {
+    body {
+        width: 375px;
+        }
+    }
+
+    .header__links{
+        display: none;}
+header {
+    
+    background-image: url(/resources/images/photos/image-header.jpg);
+    background-color: rgb(62, 191, 255);
+    background-position: center bottom;
+    background-size: 200% 80%;
+    background-repeat: no-repeat;
+   
+
+    padding-top: 30px;
+    height: 500px;
+
+    .header__top{
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
-.article__img{
+.article__img {
     border-radius: 100%;
-    transform: scale(0.5);
+    width: 25%;
 }
-header{
-  padding-top: 20px;
-  background-color:rgb(62, 191, 255);
-  .header__top{
-    flex-direction: row;
-  }
+
+.section__inner {
+    padding-top: 300px;
+    padding-bottom: 30px;
+    background-position: center bottom;
+    background-size: 200% 100%;
+
 }
-.section__content,.header_content, p{
-@extend %content_positionning;
+
+.section__img {
+    object-fit: cover;
+    width: 100%;
 }
-img.header__img--arrow-down{
-    position: absolute;
+
+.section__graphic-design {
+    background-image: url(/resources/images/photos/image-graphic-design.jpg);
+    color: hsl(167, 40%, 24%);
 }
-.title{
-    @extend %title_font_parameter;
-}
-.resume{
-    @extend %classic_font_parameter;
-}
-.
-.content{
-    @extend %classic_font_parameter
+
+.section__photography {
+    background-image: url(/resources/images/photos/image-photography.jpg);
+    color: hsl(198, 62%, 26%)
 }
 
 
-footer{
-    background-color: hsl(168, 34%, 41%);
+
+.section__content {
+    @extend %content_positionning;
+
 }
 
+footer {
+    background-color: hsl(165, 48%, 76%);
+    padding-bottom:40px;
+   aside{
+     display: flex;
+    flex-flow: row wrap;
+   }
+    .section__gallery{
+         margin-bottom: 60px;}
+
+    .img__gallery {
+        object-fit: cover;
+        width: 187.5px;
+        height: 187.5px;
+    }
+}

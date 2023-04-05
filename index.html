@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- displays site properly based on user's device -->
-
+	<link rel="Stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow&family=Fraunces">
 	<link rel="icon" type="image/png" sizes="32x32" href="./resources/images/icons/favicon-32x32.png">
 	<link rel="Stylesheet" type="text/css" href="./assets/style.css">
 	<title>Sunnyside agency landing page</title>
@@ -16,50 +16,52 @@
 
 	<header class="menu header_menu">
 		<div class="section__content">
-        <div class="header__top">
-		 <object type="logo/svg" data="./resources/images/logo.svg" class="header__svg--logo">
-			<img class="svg__img--logo" src="./resources/images/logo.svg">
-		 </object>
+			<div class="header__top">
+				<object type="logo/svg" data="./resources/images/logo.svg" class="header__svg--logo">
+					<img class="svg__img--logo" src="./resources/images/logo.svg">
+				</object>
+                <span>0</span>
+				<section class="header__links">
 
-		 <section class="header__links">
+					<a href="" class="menu__a--about">About</a>
+					<a href="" class="menu__a--services">Services</a>
+					<a href="" class="menu__a--projects">Projects</a>
+					<a href="" class="menu__a--contact">Contact</a>
 
-			<a href="" class="menu__a--about">About</a>
-			<a href="" class="menu__a--services">Services</a>
-			<a href="" class="menu__a--projects">Projects</a>
-			<a href="" class="menu__a--contact">Contact</a>
+				</section>
+			</div>
+			<section class="header__content">
+				<p class="header__p--introduction header__title">WE ARE CREATIVES</p>
 
-		 </section>
-	    </div>
-		<section class="header__content">
-		  	<p id="header__p--introduction">We are creatives</p>
+				<img class="header__img--arrow-down" src="./resources/images/icons/icon-arrow-down.svg" />
+			</section>
 
-			<img class="header__img--arrow-down" src="./resources/images/icons/icon-arrow-down.svg" />
-	    </section>
-		<img class="header__img--image-header" src="./resources/images/photos/image-header.jpg" />
-	</div>
+		</div>
 	</header>
 
 
 	<section class="section__transform">
 		<div class="section__content">
-		<img class="section__img transform__img--image-transform" src="./resources/images/photos/image-transform.jpg" />
-         	
-				<p class="transform__p--title title">Transform your brand</p>
+			<img class="section__img transform__img--image-transform"
+				src="./resources/images/photos/image-transform.jpg" />
 
-				<p class="transform__p--resume resume">
-					We are a full-service creative agency specializing in helping brands grow fast.
-					Engage your clients through compelling visuals that do most of the marketing for you.
-				</p>
+			<p class="transform__p--title title">Transform your brand</p>
 
-				<a class="transform__a--more more" href="">Learn more</a>
-			</div>
+			<p class="transform__p--resume resume">
+				We are a full-service creative agency specializing in helping brands grow fast.
+				Engage your clients through compelling visuals that do most of the marketing for you.
+			</p>
+
+			<a class="transform__a--more more" href=""> LEARN MORE <div class="more__border"></div></a>
+		</div>
 	</section>
 
 
 	<section class="section__stand-out">
-	<div class="section__content">
-	<img class="section__img stand-out__img--image-stand-out" src="./resources/images/photos/image-stand-out.jpg" />
-		
+		<div class="section__content">
+			<img class="section__img stand-out__img--image-stand-out"
+				src="./resources/images/photos/image-stand-out.jpg" />
+
 			<p class="stand-out__p--title title">Stand out to the right audience</p>
 
 			<p class="stand-out__p--resume resume">
@@ -68,16 +70,14 @@
 				digital places.
 			</p>
 
-			<a class="stand-out__a--content content" href="">Learn more</a>
+			<a class="stand-out__a--more more" href=""> LEARN MORE <div class="more__border"></div></a>
+
 		</div>
 	</section>
 
 
-	<section class="section__graphic-design">
+	<section class="section__graphic-design section__inner">
 		<div class="section__content">
-		<img class="section__img section__img--background graphic-design__img--image-graphic-design"
-			src="./resources/images/photos/image-graphic-design.jpg">
-	   
 			<p class="graphic-design__p--title title">Graphic design</p>
 
 			<p class="graphic-design__p--resume resume">
@@ -88,11 +88,8 @@
 	</section>
 
 
-	<section class="section__photography">
+	<section class="section__photography section__inner">
 		<div class="section__content">
-		<img class="section__img section__img--background photography__img--image-photography"
-			src="./resources/images/photos/image-photography.jpg">
-		
 			<p class="photography__p--title title">Photography</p>
 
 			<p class="photography__p--resume resume">
@@ -105,64 +102,67 @@
 
 	<section class="section__client-testimony">
 		<div class="section__content">
-		<p class="client-testimony__p--title">Client testimonials</p>
+			<p class="client-testimony__p--title">Client testimonials</p>
 
-		<article class="ct__article client-testimony__article1">
+			<article class="ct__article client-testimony__article1">
 
-			<img class="article__img" src="./resources/images/people/image-emily.jpg">
+				<img class="article__img" src="./resources/images/people/image-emily.jpg">
 
-			<p class="article__p--testimony resume">We put our trust in Sunnyside and they delivered, making sure our needs
-				were met and deadlines were always hit.</p>
+				<p class="article__p--testimony resume">We put our trust in Sunnyside and they delivered, making sure
+					our needs
+					were met and deadlines were always hit.</p>
 
-			<p class="article__p--client-name title">Emily R.</p>
+				<p class="article__p--client-name title">Emily R.</p>
 
-			<p class="article__p--client-profession">Marketing Director</p>
-		</article>
+				<p class="article__p--client-profession">Marketing Director</p>
+			</article>
 
-		<article class="ct__article client-testimony__article2">
+			<article class="ct__article client-testimony__article2">
 
-			<img class="article__img" src="./resources/images/people/image-thomas.jpg">
+				<img class="article__img" src="./resources/images/people/image-thomas.jpg">
 
-			<p class="article__p--testimony resume">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
-				success made it a satisfying and enjoyable experience.</p>
+				<p class="article__p--testimony resume">Sunnyside’s enthusiasm coupled with their keen interest in our
+					brand’s
+					success made it a satisfying and enjoyable experience.</p>
 
-			<p class="article__p--client-name title"> Thomas S.</p>
-			<p class="article__p--client-profession">Chief Operating Officer</p>
+				<p class="article__p--client-name title"> Thomas S.</p>
+				<p class="article__p--client-profession">Chief Operating Officer</p>
 
-		</article>
+			</article>
 
-		<article class="ct__article client-testimony__article3">
+			<article class="ct__article client-testimony__article3">
 
-			<img class="article__img" src="./resources/images/people/image-jennie.jpg">
+				<img class="article__img" src="./resources/images/people/image-jennie.jpg">
 
-			<p class="article__p--testimony resume">Incredible end result! Our sales increased over 400% when we worked with
-				Sunnyside. Highly recommended!</p>
+				<p class="article__p--testimony resume">Incredible end result! Our sales increased over 400% when we
+					worked with
+					Sunnyside. Highly recommended!</p>
 
-			<p class="article__p--client-name title">Jennie F.</p>
+				<p class="article__p--client-name title">Jennie F.</p>
 
-			<p class="article__p--client-profession">Business Owner</p>
+				<p class="article__p--client-profession">Business Owner</p>
 
-		</article>
+			</article>
 		</div>
 	</section>
 
-		<footer class="menu footer__menu">
-			<div class="section__content">
-			<section>
-            
+	<footer class="menu footer__menu">
+		<div class="section__content">
+			<section class="section__gallery">
+
 				<aside>
 
-					<img src="./resources/images/photos/image-gallery-milkbottles.jpg">
+					<img class="img__gallery" src="./resources/images/photos/image-gallery-milkbottles.jpg">
 
-					<img src="./resources/images/photos/image-gallery-cone.jpg">
+					<img class="img__gallery" src="./resources/images/photos/image-gallery-orange.jpg">
 
 				</aside>
 
 				<aside>
 
-					<img src="./resources/images/photos/image-gallery-orange.jpg">
+					<img class="img__gallery" src="./resources/images/photos/image-gallery-cone.jpg">
 
-					<img src="./resources/images/photos/image-gallery-sugarcubes.jpg">
+					<img class="img__gallery" src="./resources/images/photos/image-gallery-sugarcubes.jpg">
 
 				</aside>
 
@@ -210,8 +210,8 @@
 				</div>
 				</area>
 			</section>
-			</div>
-		</footer>
+		</div>
+	</footer>
 </body>
 
 </html>
